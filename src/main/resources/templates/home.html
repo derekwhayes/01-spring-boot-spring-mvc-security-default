@@ -31,9 +31,9 @@
             <a th:href="@{/leaders}">Leadership Meeting</a>
             (Only for Manager peeps)
         </p>
-    </div>
 
-    <hr>
+        <hr>
+    </div>
 
     <div sec:authorize="hasRole('ADMIN')">
         <!-- add a link to point to /systems ... this is for the admins -->
@@ -41,9 +41,9 @@
             <a th:href="@{/systems}">IT Systems Meeting</a>
             (Only for Admin peeps)
         </p>
-    </div>
 
-    <hr>
+        <hr>
+    </div>
 
     <!-- Add a logout button -->
     <form action="#" th:action="@{/logout}" method="POST">
