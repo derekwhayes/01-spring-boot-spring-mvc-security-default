@@ -28,6 +28,6 @@ public class DemoSecurityConfig {
                 .roles("EMPLOYEE", "MANAGER", "ADMIN")
                 .build();
 
-        return new InMemoryUserDetailsManager(john, mary, susan)
+        return new InMemoryUserDetailsManager(john, mary, susan);
     }
 }
